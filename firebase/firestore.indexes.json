@@ -1,0 +1,34 @@
+{
+  "indexes": [
+    {
+      "collectionGroup": "places",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "choice",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "rooms",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "beds",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "baths",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "Electronics",
+          "arrayConfig": "CONTAINS"
+        },
+        {
+          "fieldPath": "price",
+          "order": "ASCENDING"
+        }
+      ]
+    }
+  ]
+}
