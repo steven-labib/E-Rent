@@ -1,0 +1,234 @@
+# Simulated housing database (expanded to 75 options)
+housing_options = [
+    {"id": 1, "faculty_cluster": "Medical", "price": 2000, "amenities": ["wifi", "study_desk"], "size": {"rooms": 2, "beds": 2}, "type": "shared_room", "gender": "male"},
+    {"id": 2, "faculty_cluster": "Engineering", "price": 3500, "amenities": ["wifi", "ac", "study_desk"], "size": {"rooms": 1, "beds": 1}, "type": "apartment", "gender": "female"},
+    {"id": 3, "faculty_cluster": "Medical", "price": 1500, "amenities": ["study_desk"], "size": {"rooms": 3, "beds": 4}, "type": "dorm", "gender": "male"},
+    {"id": 4, "faculty_cluster": "Business", "price": 2500, "amenities": ["wifi", "ac"], "size": {"rooms": 2, "beds": 2}, "type": "shared_room", "gender": "female"},
+    {"id": 5, "faculty_cluster": "Engineering", "price": 1800, "amenities": ["wifi"], "size": {"rooms": 1, "beds": 2}, "type": "shared_room", "gender": "male"},
+    {"id": 6, "faculty_cluster": "IT", "price": 1500, "amenities": ["wifi", "study_desk"], "size": {"rooms": 1, "beds": 1}, "type": "shared_room", "gender": "male"},
+    {"id": 7, "faculty_cluster": "IT", "price": 1600, "amenities": ["wifi", "ac"], "size": {"rooms": 1, "beds": 1}, "type": "apartment", "gender": "male"},
+    {"id": 8, "faculty_cluster": "Sciences", "price": 1400, "amenities": ["wifi", "study_desk"], "size": {"rooms": 2, "beds": 3}, "type": "dorm", "gender": "female"},
+    {"id": 9, "faculty_cluster": "Engineering", "price": 2200, "amenities": ["wifi", "ac", "study_desk"], "size": {"rooms": 2, "beds": 2}, "type": "shared_room", "gender": "male"},
+    {"id": 10, "faculty_cluster": "Medical", "price": 1700, "amenities": ["wifi"], "size": {"rooms": 1, "beds": 1}, "type": "shared_room", "gender": "female"},
+    {"id": 11, "faculty_cluster": "Arts", "price": 1300, "amenities": ["wifi"], "size": {"rooms": 3, "beds": 4}, "type": "dorm", "gender": "male"},
+    {"id": 12, "faculty_cluster": "Business", "price": 3000, "amenities": ["wifi", "ac", "study_desk", "kitchen"], "size": {"rooms": 2, "beds": 2}, "type": "apartment", "gender": "female"},
+    {"id": 13, "faculty_cluster": "IT", "price": 1450, "amenities": ["wifi", "study_desk"], "size": {"rooms": 1, "beds": 2}, "type": "shared_room", "gender": "male"},
+    {"id": 14, "faculty_cluster": "Law", "price": 2000, "amenities": ["wifi", "ac"], "size": {"rooms": 1, "beds": 1}, "type": "apartment", "gender": "female"},
+    {"id": 15, "faculty_cluster": "Sciences", "price": 1600, "amenities": ["wifi", "study_desk"], "size": {"rooms": 2, "beds": 2}, "type": "dorm", "gender": "male"},
+    {"id": 16, "faculty_cluster": "IT", "price": 1200, "amenities": ["wifi"], "size": {"rooms": 1, "beds": 1}, "type": "shared_room", "gender": "male"},
+    {"id": 17, "faculty_cluster": "Medical", "price": 2500, "amenities": ["wifi", "ac", "study_desk"], "size": {"rooms": 2, "beds": 2}, "type": "apartment", "gender": "female"},
+    {"id": 18, "faculty_cluster": "Engineering", "price": 1700, "amenities": ["wifi", "study_desk"], "size": {"rooms": 1, "beds": 2}, "type": "shared_room", "gender": "male"},
+    {"id": 19, "faculty_cluster": "Business", "price": 1800, "amenities": ["wifi", "kitchen"], "size": {"rooms": 2, "beds": 3}, "type": "dorm", "gender": "female"},
+    {"id": 20, "faculty_cluster": "Arts", "price": 1400, "amenities": ["wifi", "study_desk"], "size": {"rooms": 2, "beds": 2}, "type": "shared_room", "gender": "male"},
+    {"id": 21, "faculty_cluster": "Law", "price": 2200, "amenities": ["wifi", "ac"], "size": {"rooms": 1, "beds": 1}, "type": "apartment", "gender": "male"},
+    {"id": 22, "faculty_cluster": "Sciences", "price": 1500, "amenities": ["wifi"], "size": {"rooms": 1, "beds": 1}, "type": "shared_room", "gender": "female"},
+    {"id": 23, "faculty_cluster": "IT", "price": 1750, "amenities": ["wifi", "ac", "study_desk"], "size": {"rooms": 2, "beds": 2}, "type": "shared_room", "gender": "male"},
+    {"id": 24, "faculty_cluster": "Medical", "price": 1900, "amenities": ["wifi", "study_desk"], "size": {"rooms": 1, "beds": 2}, "type": "dorm", "gender": "male"},
+    {"id": 25, "faculty_cluster": "Engineering", "price": 4000, "amenities": ["wifi", "ac", "study_desk", "kitchen"], "size": {"rooms": 3, "beds": 3}, "type": "apartment", "gender": "female"},
+    {"id": 26, "faculty_cluster": "Business", "price": 1600, "amenities": ["wifi", "study_desk"], "size": {"rooms": 1, "beds": 1}, "type": "shared_room", "gender": "male"},
+    {"id": 27, "faculty_cluster": "Arts", "price": 1100, "amenities": ["wifi"], "size": {"rooms": 2, "beds": 3}, "type": "dorm", "gender": "female"},
+    {"id": 28, "faculty_cluster": "IT", "price": 1550, "amenities": ["wifi", "ac"], "size": {"rooms": 1, "beds": 1}, "type": "shared_room", "gender": "male"},
+    {"id": 29, "faculty_cluster": "Law", "price": 1800, "amenities": ["wifi", "study_desk"], "size": {"rooms": 1, "beds": 2}, "type": "shared_room", "gender": "female"},
+    {"id": 30, "faculty_cluster": "Sciences", "price": 1450, "amenities": ["wifi", "study_desk"], "size": {"rooms": 2, "beds": 2}, "type": "dorm", "gender": "male"},
+    {"id": 31, "faculty_cluster": "IT", "price": 1300, "amenities": ["wifi", "study_desk"], "size": {"rooms": 1, "beds": 1}, "type": "shared_room", "gender": "male"},
+    {"id": 32, "faculty_cluster": "Medical", "price": 2100, "amenities": ["wifi", "ac", "kitchen"], "size": {"rooms": 2, "beds": 2}, "type": "apartment", "gender": "female"},
+    {"id": 33, "faculty_cluster": "Engineering", "price": 1600, "amenities": ["wifi", "study_desk"], "size": {"rooms": 1, "beds": 2}, "type": "shared_room", "gender": "male"},
+    {"id": 34, "faculty_cluster": "Business", "price": 2700, "amenities": ["wifi", "ac", "study_desk"], "size": {"rooms": 2, "beds": 2}, "type": "apartment", "gender": "female"},
+    {"id": 35, "faculty_cluster": "Arts", "price": 1200, "amenities": ["wifi"], "size": {"rooms": 3, "beds": 4}, "type": "dorm", "gender": "male"},
+    {"id": 36, "faculty_cluster": "Law", "price": 1900, "amenities": ["wifi", "study_desk"], "size": {"rooms": 1, "beds": 1}, "type": "shared_room", "gender": "female"},
+    {"id": 37, "faculty_cluster": "Sciences", "price": 1700, "amenities": ["wifi", "ac"], "size": {"rooms": 2, "beds": 2}, "type": "dorm", "gender": "male"},
+    {"id": 38, "faculty_cluster": "IT", "price": 1400, "amenities": ["wifi", "study_desk"], "size": {"rooms": 1, "beds": 1}, "type": "shared_room", "gender": "female"},
+    {"id": 39, "faculty_cluster": "Medical", "price": 2300, "amenities": ["wifi", "ac", "study_desk"], "size": {"rooms": 2, "beds": 3}, "type": "apartment", "gender": "male"},
+    {"id": 40, "faculty_cluster": "Engineering", "price": 1500, "amenities": ["wifi"], "size": {"rooms": 1, "beds": 1}, "type": "shared_room", "gender": "female"},
+    {"id": 41, "faculty_cluster": "Business", "price": 2000, "amenities": ["wifi", "study_desk"], "size": {"rooms": 2, "beds": 2}, "type": "shared_room", "gender": "male"},
+    {"id": 42, "faculty_cluster": "Arts", "price": 1000, "amenities": ["wifi"], "size": {"rooms": 2, "beds": 3}, "type": "dorm", "gender": "female"},
+    {"id": 43, "faculty_cluster": "Law", "price": 2500, "amenities": ["wifi", "ac", "study_desk"], "size": {"rooms": 1, "beds": 1}, "type": "apartment", "gender": "male"},
+    {"id": 44, "faculty_cluster": "Sciences", "price": 1300, "amenities": ["wifi", "study_desk"], "size": {"rooms": 1, "beds": 2}, "type": "shared_room", "gender": "female"},
+    {"id": 45, "faculty_cluster": "IT", "price": 1650, "amenities": ["wifi", "ac"], "size": {"rooms": 1, "beds": 1}, "type": "shared_room", "gender": "male"},
+    {"id": 46, "faculty_cluster": "Medical", "price": 1800, "amenities": ["wifi", "study_desk"], "size": {"rooms": 2, "beds": 2}, "type": "dorm", "gender": "female"},
+    {"id": 47, "faculty_cluster": "Engineering", "price": 1900, "amenities": ["wifi", "ac"], "size": {"rooms": 1, "beds": 2}, "type": "shared_room", "gender": "male"},
+    {"id": 48, "faculty_cluster": "Business", "price": 2200, "amenities": ["wifi", "study_desk", "kitchen"], "size": {"rooms": 2, "beds": 2}, "type": "apartment", "gender": "female"},
+    {"id": 49, "faculty_cluster": "Arts", "price": 1500, "amenities": ["wifi"], "size": {"rooms": 1, "beds": 1}, "type": "shared_room", "gender": "male"},
+    {"id": 50, "faculty_cluster": "Law", "price": 1700, "amenities": ["wifi", "study_desk"], "size": {"rooms": 1, "beds": 1}, "type": "shared_room", "gender": "female"},
+    {"id": 51, "faculty_cluster": "IT", "price": 1250, "amenities": ["wifi"], "size": {"rooms": 1, "beds": 1}, "type": "shared_room", "gender": "male"},
+    {"id": 52, "faculty_cluster": "Medical", "price": 1600, "amenities": ["wifi", "study_desk"], "size": {"rooms": 1, "beds": 1}, "type": "shared_room", "gender": "female"},
+    {"id": 53, "faculty_cluster": "Engineering", "price": 1400, "amenities": ["wifi"], "size": {"rooms": 2, "beds": 2}, "type": "dorm", "gender": "male"},
+    {"id": 54, "faculty_cluster": "Business", "price": 1900, "amenities": ["wifi", "ac"], "size": {"rooms": 1, "beds": 1}, "type": "apartment", "gender": "female"},
+    {"id": 55, "faculty_cluster": "Arts", "price": 1100, "amenities": ["wifi", "study_desk"], "size": {"rooms": 2, "beds": 3}, "type": "dorm", "gender": "male"},
+    {"id": 56, "faculty_cluster": "Law", "price": 2000, "amenities": ["wifi", "ac"], "size": {"rooms": 1, "beds": 1}, "type": "shared_room", "gender": "female"},
+    {"id": 57, "faculty_cluster": "Sciences", "price": 1350, "amenities": ["wifi"], "size": {"rooms": 1, "beds": 1}, "type": "shared_room", "gender": "male"},
+    {"id": 58, "faculty_cluster": "IT", "price": 1700, "amenities": ["wifi", "study_desk"], "size": {"rooms": 1, "beds": 2}, "type": "shared_room", "gender": "female"},
+    {"id": 59, "faculty_cluster": "Medical", "price": 1450, "amenities": ["wifi"], "size": {"rooms": 1, "beds": 1}, "type": "shared_room", "gender": "male"},
+    {"id": 60, "faculty_cluster": "Engineering", "price": 2100, "amenities": ["wifi", "ac", "study_desk"], "size": {"rooms": 2, "beds": 2}, "type": "apartment", "gender": "female"},
+    {"id": 61, "faculty_cluster": "Business", "price": 1500, "amenities": ["wifi"], "size": {"rooms": 1, "beds": 1}, "type": "shared_room", "gender": "male"},
+    {"id": 62, "faculty_cluster": "Arts", "price": 1200, "amenities": ["wifi", "study_desk"], "size": {"rooms": 2, "beds": 2}, "type": "dorm", "gender": "female"},
+    {"id": 63, "faculty_cluster": "Law", "price": 1800, "amenities": ["wifi", "ac"], "size": {"rooms": 1, "beds": 1}, "type": "apartment", "gender": "male"},
+    {"id": 64, "faculty_cluster": "Sciences", "price": 1600, "amenities": ["wifi", "study_desk"], "size": {"rooms": 1, "beds": 2}, "type": "shared_room", "gender": "female"},
+    {"id": 65, "faculty_cluster": "IT", "price": 1300, "amenities": ["wifi"], "size": {"rooms": 1, "beds": 1}, "type": "shared_room", "gender": "male"},
+    {"id": 66, "faculty_cluster": "Medical", "price": 2200, "amenities": ["wifi", "ac", "study_desk"], "size": {"rooms": 2, "beds": 2}, "type": "apartment", "gender": "female"},
+    {"id": 67, "faculty_cluster": "Engineering", "price": 1550, "amenities": ["wifi"], "size": {"rooms": 1, "beds": 1}, "type": "shared_room", "gender": "male"},
+    {"id": 68, "faculty_cluster": "Business", "price": 2000, "amenities": ["wifi", "study_desk"], "size": {"rooms": 2, "beds": 2}, "type": "shared_room", "gender": "female"},
+    {"id": 69, "faculty_cluster": "Arts", "price": 1400, "amenities": ["wifi"], "size": {"rooms": 1, "beds": 1}, "type": "shared_room", "gender": "male"},
+    {"id": 70, "faculty_cluster": "Law", "price": 1900, "amenities": ["wifi", "study_desk"], "size": {"rooms": 1, "beds": 1}, "type": "shared_room", "gender": "female"},
+    {"id": 71, "faculty_cluster": "Sciences", "price": 1500, "amenities": ["wifi"], "size": {"rooms": 1, "beds": 1}, "type": "shared_room", "gender": "male"},
+    {"id": 72, "faculty_cluster": "IT", "price": 1450, "amenities": ["wifi", "study_desk"], "size": {"rooms": 1, "beds": 1}, "type": "shared_room", "gender": "female"},
+    {"id": 73, "faculty_cluster": "Medical", "price": 1700, "amenities": ["wifi"], "size": {"rooms": 1, "beds": 1}, "type": "shared_room", "gender": "male"},
+    {"id": 74, "faculty_cluster": "Engineering", "price": 1800, "amenities": ["wifi", "ac"], "size": {"rooms": 1, "beds": 1}, "type": "apartment", "gender": "female"},
+    {"id": 75, "faculty_cluster": "Business", "price": 1600, "amenities": ["wifi"], "size": {"rooms": 1, "beds": 1}, "type": "shared_room", "gender": "male"}
+]
+
+# Expanded faculty clusters
+faculty_clusters = {
+    "Medical": ["Medicine", "Pharmacy", "Dentistry", "Nursing", "Physical Therapy", "Biomedical Sciences"],
+    "Engineering": ["Computer Engineering", "Mechanical Engineering", "Electrical Engineering", "Civil Engineering", "Architecture", "Chemical Engineering"],
+    "Business": ["Business Administration", "Economics", "Marketing", "Accounting", "Finance"],
+    "Sciences": ["Physics", "Chemistry", "Biology", "Mathematics", "Biotechnology"],
+    "Arts": ["Literature", "Fine Arts", "History", "Philosophy", "Psychology"],
+    "IT": ["Computer Science", "Information Technology", "Artificial Intelligence", "Data Science", "Software Engineering"],
+    "Law": ["Law", "Legal Studies", "International Law"]
+}
+
+def get_faculty_cluster(faculty):
+    for cluster, faculties in faculty_clusters.items():
+        if faculty.lower() in [f.lower() for f in faculties]:  # Case-insensitive matching
+            return cluster
+    return None
+
+def recommend_housing(faculty, budget, required_amenities, preferred_size, preferred_type, gender):
+    recommendations = []
+    faculty_cluster = get_faculty_cluster(faculty) if faculty else None
+    rejection_reasons = []
+
+    # Stage 1: Exact match
+    for housing in housing_options:
+        reasons = []
+
+        # Rule 1: Gender match (mandatory)
+        if housing["gender"] != gender:
+            reasons.append(f"Gender mismatch (required: {gender}, found: {housing['gender']})")
+            rejection_reasons.append({"id": housing["id"], "reasons": reasons})
+            continue
+
+        # Rule 2: Faculty cluster match (optional)
+        if faculty_cluster and housing["faculty_cluster"] != faculty_cluster:
+            reasons.append(f"Faculty cluster mismatch (required: {faculty_cluster}, found: {housing['faculty_cluster']})")
+
+        # Rule 3: Price within budget (±20%)
+        price_margin = budget * 0.2
+        if not (budget - price_margin <= housing["price"] <= budget + price_margin):
+            reasons.append(f"Price out of range (required: {budget - price_margin}-{budget + price_margin}, found: {housing['price']})")
+
+        # Rule 4: Amenities match
+        amenities_match = all(amenity.lower() in [a.lower() for a in housing["amenities"]] for amenity in required_amenities)
+        if not amenities_match:
+            reasons.append(f"Amenities missing (required: {required_amenities}, found: {housing['amenities']})")
+
+        # Rule 5: Size match (rooms and beds)
+        size_match = (housing["size"]["rooms"] >= preferred_size["rooms"] and
+                     housing["size"]["beds"] >= preferred_size["beds"])
+        if not size_match:
+            reasons.append(f"Size mismatch (required: {preferred_size}, found: {housing['size']})")
+
+        # Rule 6: Housing type match (optional)
+        if preferred_type and housing["type"] != preferred_type:
+            reasons.append(f"Type mismatch (required: {preferred_type}, found: {housing['type']})")
+
+        if not reasons:
+            recommendations.append(housing["id"])
+        else:
+            rejection_reasons.append({"id": housing["id"], "reasons": reasons})
+
+    # Stage 2: Relax faculty and type
+    if not recommendations:
+        fallback_recommendations = []
+        for housing in housing_options:
+            reasons = []
+            if housing["gender"] != gender:
+                continue
+            if not (budget - price_margin <= housing["price"] <= budget + price_margin):
+                continue
+            if not all(amenity.lower() in [a.lower() for a in housing["amenities"]] for amenity in required_amenities):
+                continue
+            if not (housing["size"]["rooms"] >= preferred_size["rooms"] and
+                    housing["size"]["beds"] >= preferred_size["beds"]):
+                continue
+            fallback_recommendations.append({"id": housing["id"], "faculty_cluster": housing["faculty_cluster"], "type": housing["type"]})
+
+        if fallback_recommendations:
+            recommendations = [r["id"] for r in fallback_recommendations[:5]]
+            print("No exact matches found. Returning closest matches (relaxed faculty or type constraints):")
+        else:
+            # Stage 3: Relax amenities and size
+            final_fallback = []
+            for housing in housing_options:
+                if housing["gender"] != gender:
+                    continue
+                if not (budget - price_margin <= housing["price"] <= budget + price_margin):
+                    continue
+                final_fallback.append({"id": housing["id"], "amenities": housing["amenities"], "size": housing["size"]})
+
+            if final_fallback:
+                recommendations = [r["id"] for r in final_fallback[:5]]
+                print("No matches with required amenities or size. Returning closest matches (matching gender and price only):")
+            else:
+                print("No matches found, even with relaxed constraints. Reasons for rejection:")
+                for rejection in rejection_reasons:
+                    print(f"Housing ID {rejection['id']}: {', '.join(rejection['reasons'])}")
+
+    return recommendations
+
+# Test Case 1: Your original input
+student1 = {
+    "faculty": "Computer Science",
+    "budget": 1500,
+    "required_amenities": ["wifi"],
+    "preferred_size": {"rooms": 1, "beds": 1},
+    "preferred_type": "",  # Flexible type
+    "gender": "male"
+}
+
+print("Test Case 1 (Your input):")
+recommended_housing1 = recommend_housing(**student1)
+print("Recommended housing IDs:", recommended_housing1)
+
+# Test Case 2: Different input (female, Medicine, 2000 budget)
+student2 = {
+    "faculty": "Medicine",
+    "budget": 2000,
+    "required_amenities": ["wifi", "study_desk"],
+    "preferred_size": {"rooms": 1, "beds": 1},
+    "preferred_type": "shared_room",
+    "gender": "female"
+}
+
+print("\nTest Case 2 (Different input):")
+recommended_housing2 = recommend_housing(**student2)
+print("Recommended housing IDs:", recommended_housing2)
+
+# Test Case 3: Low budget, female, Arts, dorm
+student3 = {
+    "faculty": "Fine Arts",
+    "budget": 1000,
+    "required_amenities": ["wifi"],
+    "preferred_size": {"rooms": 1, "beds": 1},
+    "preferred_type": "dorm",
+    "gender": "female"
+}
+
+print("\nTest Case 3 (Low budget, female, Arts):")
+recommended_housing3 = recommend_housing(**student3)
+print("Recommended housing IDs:", recommended_housing3)
+
+# Test Case 4: Invalid faculty, high budget
+student4 = {
+    "faculty": "Invalid Faculty",
+    "budget": 4000,
+    "required_amenities": ["wifi", "ac"],
+    "preferred_size": {"rooms": 2, "beds": 2},
+    "preferred_type": "apartment",
+    "gender": "male"
+}
+
+print("\nTest Case 4 (Invalid faculty, high budget):")
+recommended_housing4 = recommend_housing(**student4)
+print("Recommended housing IDs:", recommended_housing4)
